@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+    var user = 0
+    var opponent = 0
+
+
+
+function computerPlay() {
+
+  var selection = ['Rock','Paper','Scissors'];
+
+  var numbero = Math.floor(Math.random()* 3)
+
+
+ return selection[numbero].toLowerCase()
+}
+
+
+let computerSelection = computerPlay()
+
+
+
+
+function gameOne(playerSelection,computerSelection) {
+
+
+
+ if (computerSelection === 'rock' && playerSelection === 'paper') {
+
+    return 'You win'
+
+  }
+
+
+  else if (computerSelection === 'rock' && playerSelection === 'scissors') {
+
+return 'You lose'
+
+
+}
+
+  else if (computerSelection === 'paper' && playerSelection === 'rock') {
+
+return 'You lose'
+
+}
+
+else if (computerSelection === 'paper' && playerSelection === 'scissors') {
+
+return 'You win'
+
+}
+
+else if (computerSelection === 'scissors' && playerSelection === 'rock') {
+
+return 'You win'
+
+}
+
+else if (computerSelection === 'scissors' && playerSelection === 'paper') {
+
+return 'You lose'
+
+}
+
+else {
+
+  return 'Draw'
+
+}
+
+}
+
+
+
+function game() {
+
+
+var user = 0
+var opponent = 0
+
+  for (i=0; i < 6; i++) {
+
+
+var computerSelection = computerPlay()
+
+var playerSelection = window.prompt('make a selection' )
+
+
+ gameOne(playerSelection,computerSelection);
+
+
+if (
+gameOne(playerSelection,computerSelection) == "You win") {
+
+user += 1
+alert('Win');
+
+}
+
+else if (gameOne(playerSelection,computerSelection) == "You lose") {
+
+
+  opponent += 1
+  alert('lose')
+}
+
+else if (gameOne(playerSelection,computerSelection) == "Draw") {
+
+  alert ('Draw')
+}
+
+
+  }
+
+
+  if (user > 2) {
+
+
+  console.log('You won')
+
+
+ }
+
+else if (opponent > 2) {
+
+  console.log('You lost')
+}
+
+else if (user == opponent) {
+
+  console.log('Draw')
+}
+
+}
+
+game()
+
+
+
+
+  </script>
+
+  </body>
+</html>

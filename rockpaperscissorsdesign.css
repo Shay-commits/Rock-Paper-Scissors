@@ -1,0 +1,109 @@
+body {
+
+  background-color: #A7B8A5;
+}
+.heading {
+      text-align: center;
+      height: 100px;
+      font-family: 'Merriweather', serif;
+      font-size: 2rem;
+
+
+
+}
+
+
+.buttonContainer {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.scoreLabel {
+
+  display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+margin-top: 60px;
+font-family: 'Share', cursive;
+    font-size: 2rem;
+}
+
+.scoreLabel > h3 {
+
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.scoreContainer {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  font-family: monospace;
+      font-size: 7rem;
+}
+
+.scoreContainer > p {
+
+  margin: 1rem;
+}
+
+button {
+
+height: 200px;
+width: 200px;
+margin: 10px;
+border-radius: 20px;
+
+
+}
+
+
+.rock {
+  background: url(https://lh3.googleusercontent.com/proxy/bK4ZTQ7GXN6U_rHTTT6M-WHgQpOUqjPRrvI0pJ68MggTtaZhG8cu90M7aNusBxnpFtfap-ExqRsEDxkHTuFPHglAOKFg7_soShnV);
+  background-size: 200px 200px;
+}
+
+.paper {
+
+  background: url(https://lh3.googleusercontent.com/proxy/jq30rMqDrOqk4nO5ybg_Tk4mrxOaAsSAh7NEPP0_jsNibHLPd1YFW8JYXT1FF4Eod0Gg6Hnx1QwbTqsQnzEzv1w);
+  background-size: 200px 200px;
+
+}
+
+.scissors {
+
+  background: url(https://cdn5.vectorstock.com/i/1000x1000/66/94/line-art-black-and-white-comb-and-scissors-vector-25766694.jpg);
+
+  background-size: 200px 230px;
+
+}
+
+#showonend {
+  display: none;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Share', cursive;
+}
+
+#showonend > button {
+  height: 50px;
+width: 200px;
+margin: 10px;
+border-radius: 20px;
+background-color: #cbbb91;
+font-family: monospace;
+
+}
+
+#results {
+  text-align: center;
+  font-family: 'Caudex', serif;
+}
